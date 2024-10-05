@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background-color: gray;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper{
+  width: 400px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+}
+.wrapper header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+.wrapper form{
+  margin: 40px 0px 20px 0px;
+}
+
+.wrapper form input,
+.wrapper form select,
+.wrapper form button{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.wrapper form p{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.wrapper form input{
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0 15px;
+  border: 1px solid gray;
+}
+.wrapper form input:focus{
+  border: 2px solid gray;
+}
+.wrapper form .drop-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.wrapper form .drop-list .select-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  height: 45px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.wrapper form .drop-list .select-box select{
+  width: auto;
+  font-size: 16px;
+  background-color: none;
+  margin: 0 -5px 0 5px;
+}
+.wrapper form .drop-list .select-box select::-webkit-scrollbar{
+  width: 8px;
+}
+.wrapper form .drop-list .select-box select::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+.wrapper form .drop-list .select-box select::-webkit-scrollbar-thumb{
+  background-color: #888;
+  border-radius: 5px;
+  border-right: 2px solid #fff;
+}
+.wrapper form .drop-list .arrow-icon{ 
+  font-size: 22px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.wrapper form .exchange_rate{
+  margin: 20px 0 30px;
+  font-size: 1.2rem;
+}
+.wrapper form button{
+  height: 50px;
+  background-color: gray;
+  color: white;
+  font-size: 17px; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.wrapper form button:hover{
+  background: transparent;
+  color: gray;
+  border: 2px solid gray;
+}
